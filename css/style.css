@@ -3,13 +3,12 @@
     margin: 0;
     padding: 0;
     box-sizing: border-box;
-    outline: 1px solid red;
+    /* outline: 1px solid red; */
 }
 
 body{
-    font-family: 'Poppins', sans-serif;
+    font-family: 'Poppinsbest', sans-serif;
     font-size: 16px;
-    background-color: #a0a0a0;
 }
 
 .container{
@@ -17,6 +16,75 @@ body{
     max-width: 1440px;
     margin-left: auto;
     margin-right: auto;
+}
+
+.read-more i{
+    color: #D4D6D4;
+}
+
+.read-more:hover i{
+    color: #FFD723;
+}
+
+.read-more{
+    font-size: 16px;
+    line-height: 24px;
+    color: #D4D6D4;
+    font-weight: bold;
+}
+
+.read-more:hover{
+    color: #FFD723;
+}
+
+.title{
+    color: #4D533C;
+    font-size: 36px;
+    line-height: 46px;
+    margin-bottom: 45px;
+}
+
+.description{ 
+    line-height: 26px;
+    color: #21384299;
+    margin-bottom: 55px;
+}
+
+.more-info{
+    font-size: 16px;
+    line-height: 24px;
+    color: #D4D6D4;
+}
+
+.more-info:hover{
+    color: red;
+    font-weight: bold;
+}
+
+.blockquote{
+    font-size: 24px;
+    font-style: italic;
+    line-height: 40px;
+    color: #4D533C;
+    margin-bottom: 60px;
+}
+
+.founder{
+    display: flex;
+}
+
+.founder_avatar{
+    margin-right: 20px;
+}
+
+.founder_name{
+    line-height: 45px;
+}
+
+.founder_name p:nth-child(1){
+    color: #4D533C;
+    font-size: 22px;
+    font-weight: bold;
 }
 
 .promo{
@@ -101,33 +169,166 @@ body{
 .promo__main span{
     font-size: 14px;
     line-height: 21px;
+    margin-bottom: 40px;
 }
 
 .promo__main h2{
     font-size: 60px;
     line-height: 74px;
+    margin-bottom: 50px;
 }
 
 .promo__main p{
     line-height: 26px;
-}
-
-.promo__main i{
-    color: #FFD723;
-}
-
-.promo__main a{
-    font-size: 16px;
-    line-height: 24px;
-    color: #FFD723;
-    font-weight: bold;
+    margin-bottom: 60px;
 }
 
 .client{
-    margin-top: -60px;
+    margin-top: -55px;
+    margin-bottom: 120px;
+}
+
+.client__ico::before{
+    content: "";
+    position: absolute;
+    width: 100vw;
+    height: 100%;
+    background-color: #fff;
+    z-index: -1;
 }
 
 .client__ico{
-    width: 100vw;
+    z-index: 1;
+    position: relative;
     background-color: #fff;
+    display: flex;
+    justify-content: space-between;
+    box-shadow: 20px 70px 50px rgb(234, 233, 233);
+}
+
+.client__ico>img{
+    margin-left: 40px;
+}
+
+.services{
+    margin-bottom: 350px;
+}
+
+.services .container{
+    display: flex;
+    align-items: center;
+}
+
+.services__info{
+    width: 100%;
+}
+
+.services__info_content{
+    width: 90%;
+}
+
+.services__info span{
+    color: #4D533CE5;
+    font-size: 14px;
+    line-height: 21px;
+    display: block;
+    margin-bottom: 45px;
+}
+
+.services__quote{
+    width: 100%;
+}
+
+.services__quote_content{
+    width: 80%;
+    margin: 0 auto;
+}
+
+.project{
+    margin-bottom: 120px;
+}
+
+.project .container{
+    display: flex;
+    align-items: center;
+}
+
+.project .container .title{
+    width: 70%;
+    margin-right: 60px;
+}
+
+.project .container .description{
+    margin-right: 100px;
+}
+
+.features{
+    margin-bottom: 340px;
+}
+
+.features .container{
+    display: flex;
+    flex-direction: column;
+}
+
+.features__product{
+    display: flex;
+    align-items: center;
+}
+
+.features__product:not(:last-child){
+    margin-bottom: 160px;
+}
+
+.features__product:nth-child(2){
+    flex-direction: row-reverse;
+}
+
+.features_ico{
+    position: relative;
+    margin-left: -150px;
+}
+
+.features__product:nth-child(2) .features_ico{
+    margin-left: 0px; 
+    margin-right: -150px;  
+}
+
+.features__product:nth-child(2) .features__quote_content{
+    left: -30px;
+}
+
+.features__quote_content{
+    border-radius: 8px;
+    background-color: #fff;
+    position: absolute;
+    bottom: -65px;
+    right: -30px;
+    width: 70%;
+    padding: 35px 30px;
+    box-shadow: 20px 20px 20px rgb(149, 149, 149);
+}
+
+.features__quote_content .blockquote{
+    font-size: 16px;
+    line-height: 26px;
+}
+
+.features__quote_content .founder_name p:first-child{
+    font-size: 16px;
+    line-height: 24px;
+}
+
+.features__quote_content .founder_name p:last-child{
+    font-size: 14px;
+    line-height: 21px;
+}
+
+.features__info_content_wrapper{
+    width: 80%;
+    margin: 0 auto;
+}
+
+.evaluation .title{
+    width: 60%;
 }
